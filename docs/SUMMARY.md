@@ -2,6 +2,7 @@
 
 ## Index
 
+- [My Thoughts](./README.md)
 - [My Style Guide](./MyStyleGuides/README.md)
   - [React & TypeScript](./MyStyleGuides/ReactAndTypeScript/README.md)
     - [let を使わず const を使う](./MyStyleGuides/ReactAndTypeScript/00_let%20を使わず%20const%20を使う.md)
