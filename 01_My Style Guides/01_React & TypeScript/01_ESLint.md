@@ -24,6 +24,14 @@
 - [https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
 - 子コンポーネントを持たないコンポーネントが自己完結していないとエラーにする
 
+```tsx
+// NG
+<Button icon={<Arrow></Arrow>}></Button>
+
+// OK
+<Button icon={<Arrow />} />
+```
+
 ### `react/jsx-boolean-value`
 
 - [https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md)
