@@ -12,4 +12,4 @@
 
 ## 参考
 
-[プログラミングの原則：enumの比較はすべてバグ - Uzabase for Engineers](https://tech.uzabase.com/entry/2023/12/03/100712)
+[プログラミングの原則：enum の比較はすべてバグ - Uzabase for Engineers](https://tech.uzabase.com/entry/2023/12/03/100712)

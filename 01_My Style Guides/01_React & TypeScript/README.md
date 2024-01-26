@@ -1,8 +1,9 @@
 # React & TypeScript
 
 ## 規約
+
 - wip: let を使わず const を使う
-- wip: 関数の引数が2つ以上の場合はオブジェクトで渡す
+- wip: 関数の引数が 2 つ以上の場合はオブジェクトで渡す
 - wip: Enum を switch 文で網羅する
 - ESLint
 - wip: props に依存しない関数、変数はコンポーネントの外に書く
@@ -15,3 +16,4 @@
 
 - [https://react.dev/learn/you-might-not-need-an-effect#resetting-all-state-when-a-prop-changes](https://react.dev/learn/you-might-not-need-an-effect#resetting-all-state-when-a-prop-changes)
 - [https://legacy.reactjs.org/docs/hooks-rules.html](https://legacy.reactjs.org/docs/hooks-rules.html)
+- https://github.com/airbnb/javascript/tree/master/react
