@@ -4,12 +4,12 @@
 
 - wip: let を使わず const を使う
 - wip: 関数の引数が 2 つ以上の場合はオブジェクトで渡す
-- wip: Enum を switch 文で網羅する
-- ESLint
 - wip: props に依存しない関数、変数はコンポーネントの外に書く
+- wip: Enum を switch 文で網羅する
 - wip: useCallback をどう使うか
 - wip: コンポーネントに margin を持たせない
 - wip: コンポーネントにラベルを持たせない
+- ESLint
 - wip: type か interface か
 
 ## 参考
