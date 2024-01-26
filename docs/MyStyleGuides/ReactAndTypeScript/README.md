@@ -2,15 +2,16 @@
 
 ## 規約
 
-- wip: let を使わず const を使う
-- wip: 関数の引数が 2 つ以上の場合はオブジェクトで渡す
-- wip: props に依存しない関数、変数はコンポーネントの外に書く
-- wip: Enum を switch 文で網羅する
-- wip: useCallback をどう使うか
-- wip: コンポーネントに margin を持たせない
-- wip: コンポーネントにラベルを持たせない
+- let を使わず const を使う
+- 関数の引数が 2 つ以上の場合はオブジェクトで渡す
+- props に依存しない関数、変数はコンポーネントの外に書く
+- Enum を switch 文で網羅する
+- useCallback をどう使うか
+- コンポーネントに margin を持たせない
+- コンポーネントにラベルを持たせない
 - ESLint
-- wip: type か interface か
+- type か interface か
+- useState で前の値を正しく更新する
 
 ## 参考
 

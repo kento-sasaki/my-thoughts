@@ -2,6 +2,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
+  "prettier.semi": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
