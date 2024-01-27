@@ -17,4 +17,5 @@
 
 - [https://react.dev/learn/you-might-not-need-an-effect#resetting-all-state-when-a-prop-changes](https://react.dev/learn/you-might-not-need-an-effect#resetting-all-state-when-a-prop-changes)
 - [https://legacy.reactjs.org/docs/hooks-rules.html](https://legacy.reactjs.org/docs/hooks-rules.html)
-- https://github.com/airbnb/javascript/tree/master/react
+- [https://github.com/airbnb/javascript/tree/master/react](https://github.com/airbnb/javascript/tree/master/react)
+- [https://google.github.io/styleguide/tsguide.html](https://google.github.io/styleguide/tsguide.html)
