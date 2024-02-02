@@ -15,7 +15,7 @@
       - [ESLint](./MyStyleGuides/ReactAndTypeScript/07_ESLint.md)
       - [type か interface か](./MyStyleGuides/ReactAndTypeScript/08_type%20か%20interface%20か.md)
       - [useState で前の値を正しく更新する](./MyStyleGuides/ReactAndTypeScript/09_useState%20で前の値を正しく更新する.md)
-  - [チームビルディング](TeamBuilding/README.md)
+  - [チームビルディング/プロジェクト管理](TeamBuilding/README.md)
     - [はじめに：テックリードとして何が必要か](./TeamBuilding/00_はじめに：テックリードとして何が必要か.md)
     - [タスク管理](./TeamBuilding/01_タスク管理.md)
     - [ADR](./TeamBuilding/02_ADR.md)
