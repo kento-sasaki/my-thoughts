@@ -6,6 +6,7 @@
 
 ## Index
 
-- React & TypeScript
+- React
+- TypeScript
 
 参考
