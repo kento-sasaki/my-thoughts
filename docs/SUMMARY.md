@@ -2,7 +2,7 @@
 
 ## Index
 
-- [My Thoughts](./README.md)
+- [🤔 My Thoughts](./README.md)
   - [📜 My Style Guide](./MyStyleGuides/README.md)
     - [React](./MyStyleGuides/React/README.md)
       - [props に依存しない関数、変数はコンポーネントの外に書く](./MyStyleGuides/React/00_props%20に依存しない関数、変数はコンポーネントの外に書く.md)
