@@ -1,4 +1,4 @@
-# My Style Guides
+# My Style Guide
 
 ## これは何？
 
