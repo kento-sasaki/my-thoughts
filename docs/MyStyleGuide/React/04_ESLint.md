@@ -49,6 +49,20 @@
 
 - useEffect, useCallback, useMemo などの依存をチェックしてくれる
 
+### `react/hook-use-state`
+- [https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md)
+- `useState` で管理する state と setter の命名を矯正してくれる
+  - `[state, setState]` の形になっていないとエラーにする
+
+```tsx
+// NG
+const [count, updateCount] = useState(0)
+
+// OK
+const [count, setCount] = useState(0)
+```
+
+
 ## 参考
 
 [クリーンな React コードを書くための ESLint を調べた](https://zenn.dev/meijin/articles/clean-react-code-eslint-research)
