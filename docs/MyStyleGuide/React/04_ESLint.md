@@ -50,6 +50,7 @@
 - useEffect, useCallback, useMemo などの依存をチェックしてくれる
 
 ### `react/hook-use-state`
+
 - [https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md)
 - `useState` で管理する state と setter の命名を矯正してくれる
   - `[state, setState]` の形になっていないとエラーにする
@@ -62,6 +63,37 @@ const [count, updateCount] = useState(0)
 const [count, setCount] = useState(0)
 ```
 
+### `no-restricted-imports`
+
+- https://eslint.org/docs/latest/rules/no-restricted-imports
+- 指定したモジュールを import した場合にエラーにする
+
+**eslintrc.js**
+
+```js:eslintrc.js
+module.exports = {
+  rules: {
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [
+          {
+            name: '@chakra-ui/react',
+            importNames: ['Text', 'TextProps'],
+          },
+        ],
+      },
+    ],
+  },
+}
+```
+
+**エラーになる**
+
+```tsx
+// NG
+import { Text } from '@chakra-ui/react'
+```
 
 ## 参考
 
