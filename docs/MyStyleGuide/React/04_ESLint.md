@@ -95,6 +95,12 @@ module.exports = {
 import { Text } from '@chakra-ui/react'
 ```
 
+### `eslint-plugin-import`
+- https://www.npmjs.com/package/eslint-plugin-import
+- `import` の順序を整列させる
+
+
 ## 参考
 
 [クリーンな React コードを書くための ESLint を調べた](https://zenn.dev/meijin/articles/clean-react-code-eslint-research)
+[ESLintでimportの整列・追加・削除を自動化する](https://qiita.com/yukiji/items/5ba9e065ac6ed57d05a4)
