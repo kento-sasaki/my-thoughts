@@ -2,12 +2,22 @@
 
 ## これは何？
 
-開発に関する個人的な考えを書いておくもの。
+開発に関する個人的な思想・考えをまとめたもの。
+
+構成は2部立て。
+
+- **第1部 原則・価値観（why）** — 設計・開発・デザインの根っこにある考え方
+- **第2部 実践・技術（what / how）** — 原則を具体的な道具の上でどう実践するか
 
 ## Index
 
-- My Style Guide
-- 実装アイディア
-- チームビルディング/プロジェクト管理
-- ブランチ運用
-- デザイン
+### 第1部: 原則・価値観
+
+- [設計の原則](./Principles/Engineering/README.md)
+- [AI 時代の開発・ワークフロー観](./Principles/AIWorkflow/README.md)
+- [UI・デザイン観と技術倫理](./Principles/Design/README.md)
+
+### 第2部: 実践・技術
+
+- [React](./Practices/React/README.md)
+- [コード規約](./Practices/StyleGuide/README.md)
