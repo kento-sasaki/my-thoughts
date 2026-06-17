@@ -1,6 +1,5 @@
 # LLM には厳格な制約を
 
-<!-- 昇格元（private）: Knowledge/AI/チームみらいのAIネイティブな開発手法.md・Knowledge/ClaudeCode/ClaudeOpus4.7のVerificationLoop.md・Knowledge/ClaudeCode/ClaudeCodeのコンテクスト管理.md・Writings/2026-05-12_eslint-no-text-inside-button/index.md -->
 
 [ドキュメントより実行可能な制約へ](./02_実行可能な制約へ.md)で、ルールは読ませる文章より実行できる制約にしたほうが効く、と書いた。この章はその続きだ。「実行可能な形にする」のが**手段**だとすれば、ここで書きたいのは、その手前にある**態度**の話になる。
 
