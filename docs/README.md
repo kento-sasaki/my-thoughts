@@ -1,13 +1,13 @@
+<!-- TODO: Review -->
+
 # My Thoughts
 
 ## これは何？
 
 開発に関する個人的な思想・考えをまとめたもの。
 
-構成は2部立て。
-
-- **第1部 原則・価値観（why）** — 設計・開発・デザインの根っこにある考え方
-- **第2部 実践・技術（what / how）** — 原則を具体的な道具の上でどう実践するか
+- **第1部 原則・価値観 (why)**: 設計・開発・デザインの根本にある考え方
+- **第2部 実践・技術 (what / how)**: 原則を具体的にどう実践するか
 
 ## Index
 
@@ -21,3 +21,4 @@
 
 - [React](./Practices/React/README.md)
 - [コード規約](./Practices/StyleGuide/README.md)
+- [AI ワークフローの実践](./Practices/AIWorkflow/README.md)

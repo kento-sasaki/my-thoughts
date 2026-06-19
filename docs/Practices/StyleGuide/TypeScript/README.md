@@ -1,3 +1,5 @@
+<!-- TODO: Review -->
+
 # TypeScript の規約
 
 型の正確さと読みやすさを保つための TypeScript の現場ルール。

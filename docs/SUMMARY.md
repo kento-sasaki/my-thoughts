@@ -1,3 +1,5 @@
+<!-- TODO: Review -->
+
 # Summary
 
 - [🤔 My Thoughts](./README.md)
@@ -7,8 +9,7 @@
 - [⚙️ 設計の原則](./Principles/Engineering/README.md)
     - [最小依存性：親に依存しないコンポーネント](./Principles/Engineering/01_最小依存性.md)
     - [命名は言語](./Principles/Engineering/02_命名は言語.md)
-    - [制約が設計を導く](./Principles/Engineering/03_制約が設計を導く.md)
-    - [恣意的な分割をやめ、責務で分ける](./Principles/Engineering/04_責務で分ける.md)
+    - [恣意的な分割をやめ、責務で分ける](./Principles/Engineering/03_責務で分ける.md)
 - [🤖 AI 時代の開発・ワークフロー観](./Principles/AIWorkflow/README.md)
     - [表層から設計へ](./Principles/AIWorkflow/01_表層から設計へ.md)
     - [ドキュメントより実行可能な制約へ](./Principles/AIWorkflow/02_実行可能な制約へ.md)
@@ -48,3 +49,7 @@
         - [不要な型キャストを避け型ガードを使う](./Practices/StyleGuide/TypeScript/03_型キャストを避け型ガードを使う.md)
         - [自由入力のテキストは zod で前後の空白文字を trim() する](./Practices/StyleGuide/TypeScript/04_自由入力はzodでtrimする.md)
         - [Enum を switch 文で網羅する](./Practices/StyleGuide/TypeScript/05_Enumはswitchで網羅する.md)
+- [🤖 AI ワークフローの実践](./Practices/AIWorkflow/README.md)
+    - [規約を ESLint カスタムルールにする](./Practices/AIWorkflow/01_ESLintカスタムルール.md)
+    - [手順を Agent Skill にする](./Practices/AIWorkflow/02_AgentSkill.md)
+    - [知識の置き場所を設計する](./Practices/AIWorkflow/03_知識の置き場所設計.md)

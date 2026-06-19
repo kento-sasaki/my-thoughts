@@ -1,3 +1,5 @@
+<!-- TODO: Review -->
+
 # React の規約
 
 第1部の[設計の原則](../../../Principles/Engineering/README.md)を、React の現場ルールに落としたもの。各規約は対応する原則へ相互リンクしている。

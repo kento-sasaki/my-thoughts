@@ -1,14 +1,42 @@
+<!-- TODO: Review -->
+
 # mockGraphQLQuery と useMutation にジェネリクスを指定する
 
-## 規約
+## 概要
 
-- `mockGraphQLQuery` / `mockGraphQLMutation` はジェネリクスで型を指定し、型チェックを効かせる。
-- `useMutation` も Mutation と Variables のジェネリクスを必ず指定する。
+- `mockGraphQLQuery` や `mockGraphQLMutation` を使う際は、必ずジェネリクスで型を指定して型チェックが効くようにする。
+- `useMutation` を使う際も、Mutation と Variables のジェネリクスを必ず指定する。
+
+## 👎 不適切な例
 
 ```tsx
-// 👍 ジェネリクスで型を指定
-mockGraphQLQuery<PatientProfileCheckQuery>('FindPatientProfileCheckQuery', standard)
-const [createPacingPlan] = useMutation<CreatePacingPlan, CreatePacingPlanVariables>(CREATE_PACING_PLAN)
+// mockGraphQLQuery に型を指定していない
+mockGraphQLQuery('FindPatientProfileCheckQuery', standard)
+
+// useMutation に型を指定していない
+const [createPacingPlan] = useMutation(CREATE_PACING_PLAN)
 ```
 
-型を指定しないと、モックデータや変数がスキーマと乖離していてもコンパイル時に検出できない。指定すれば、スキーマ変更時に影響箇所を自動で検出できる。
+## 👍 適切な例
+
+```tsx
+// mockGraphQLQuery にジェネリクスで型を指定
+mockGraphQLQuery<PatientProfileCheckQuery>(
+  'FindPatientProfileCheckQuery',
+  standard
+)
+
+// useMutation にジェネリクスで型を指定
+const [createPacingPlan] = useMutation<
+  CreatePacingPlan,
+  CreatePacingPlanVariables
+>(CREATE_PACING_PLAN)
+```
+
+## なぜこのルールが必要か
+
+ジェネリクスを指定しないと、モックデータや変数の型チェックが効かず、実際の GraphQL スキーマと乖離したデータを渡してもコンパイル時に検出できない。型を指定しておけば、スキーマ変更時に影響箇所を自動的に検出でき、モックと本番コードの両方が型の安全網に守られる。
+
+## 例外
+
+特になし
