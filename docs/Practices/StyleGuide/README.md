@@ -1,4 +1,10 @@
-<!-- TODO: Review -->
+---
+title: コード規約
+icon: 📐
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # コード規約
 

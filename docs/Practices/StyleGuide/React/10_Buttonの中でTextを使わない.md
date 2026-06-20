@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: Button コンポーネントの中で Text コンポーネントを使わない
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # Button コンポーネントの中で Text コンポーネントを使わない
 

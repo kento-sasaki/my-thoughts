@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: mockGraphQLQuery と useMutation にジェネリクスを指定する
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # mockGraphQLQuery と useMutation にジェネリクスを指定する
 

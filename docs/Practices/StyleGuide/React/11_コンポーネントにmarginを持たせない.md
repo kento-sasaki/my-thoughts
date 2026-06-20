@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: コンポーネントに margin を持たせない
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # コンポーネントに margin を持たせない
 

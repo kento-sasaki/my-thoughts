@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: LLM には厳格な制約を
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # LLM には厳格な制約を
 

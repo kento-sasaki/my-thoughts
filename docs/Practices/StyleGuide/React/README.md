@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: React の規約
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # React の規約
 

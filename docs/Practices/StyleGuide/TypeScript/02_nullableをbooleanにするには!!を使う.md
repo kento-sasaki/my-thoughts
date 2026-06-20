@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: nullable な値を boolean にする際は !! を使う
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # nullable な値を boolean にする際は !! を使う
 

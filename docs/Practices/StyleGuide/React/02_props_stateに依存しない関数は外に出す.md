@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: props や state に依存しない関数・変数はコンポーネントの外に書く
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # props や state に依存しない関数・変数はコンポーネントの外に書く
 

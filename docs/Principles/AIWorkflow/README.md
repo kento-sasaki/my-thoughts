@@ -1,4 +1,10 @@
-<!-- TODO: Review -->
+---
+title: AI 時代の開発・ワークフロー観
+icon: 🤖
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # AI 時代の開発・ワークフロー観
 

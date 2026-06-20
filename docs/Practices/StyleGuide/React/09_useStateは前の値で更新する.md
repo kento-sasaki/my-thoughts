@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: useState で前の値を正しく更新する
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # useState で前の値を正しく更新する
 

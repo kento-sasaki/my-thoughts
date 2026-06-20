@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: Context 導入時のモック共通化
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # Context 導入時のモック共通化
 

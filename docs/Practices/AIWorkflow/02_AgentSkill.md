@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: 手順を Agent Skill にする
+status: draft
+created: 2026-06-18
+updated: 2026-06-19
+---
 
 # 手順を Agent Skill にする
 

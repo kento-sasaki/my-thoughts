@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: React.Fragment で全体をラップしたコンポーネントを作らない
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # React.Fragment で全体をラップしたコンポーネントを作らない
 

@@ -1,5 +1,10 @@
-<!-- TODO: Review -->
-
+---
+title: My Thoughts
+icon: 🤔
+status: published
+created: 2026-06-17
+updated: 2026-06-19
+---
 # My Thoughts
 
 ## これは何？

@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: 自由入力のテキストは zod で前後の空白文字を trim() する
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # 自由入力のテキストは zod で前後の空白文字を trim() する
 

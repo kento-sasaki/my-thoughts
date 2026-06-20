@@ -1,4 +1,9 @@
-<!-- TODO: Review -->
+---
+title: 条件付き hooks は Container パターンで解決する
+status: draft
+created: 2026-06-17
+updated: 2026-06-19
+---
 
 # 条件付き hooks は Container パターンで解決する
 
