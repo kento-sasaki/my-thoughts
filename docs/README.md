@@ -14,6 +14,7 @@ updated: 2026-06-19
 - **第1部 原則・価値観 (why)**: 設計・開発・デザインの根本にある考え方
 - **第2部 実践・技術 (what / how)**: 原則を具体的にどう実践するか
 
+<!-- 
 ## Index
 
 ### 第1部: 原則・価値観
@@ -26,4 +27,5 @@ updated: 2026-06-19
 
 - [React](./Practices/React/README.md)
 - [コード規約](./Practices/StyleGuide/README.md)
-- [AI ワークフローの実践](./Practices/AIWorkflow/README.md)
+- [AI ワークフローの実践](./Practices/AIWorkflow/README.md) 
+-->
