@@ -16,5 +16,8 @@
         - [React.Fragment で全体をラップしたコンポーネントを作らない](./Practices/StyleGuide/React/01_Fragmentで全体をラップしない.md)
         - [props や state に依存しない関数・変数はコンポーネントの外に書く](./Practices/StyleGuide/React/02_props_stateに依存しない関数は外に出す.md)
         - [React.JSX.Element を返す関数を定義しない](./Practices/StyleGuide/React/03_JSXを返す関数はコンポーネントにする.md)
+        - [不要な export をしない](./Practices/StyleGuide/React/07_不要なexportをしない.md)
+        - [useState で前の値を正しく更新する](./Practices/StyleGuide/React/09_useStateは前の値で更新する.md)
+        - [Button コンポーネントの中で Text コンポーネントを使わない](./Practices/StyleGuide/React/10_Buttonの中でTextを使わない.md)
     - [TypeScript の規約](./Practices/StyleGuide/TypeScript/README.md)
         - [Enum を switch 文で網羅する](./Practices/StyleGuide/TypeScript/05_Enumはswitchで網羅する.md)
