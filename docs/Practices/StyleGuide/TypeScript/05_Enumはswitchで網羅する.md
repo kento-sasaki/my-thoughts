@@ -1,10 +1,9 @@
 ---
 title: Enum を switch 文で網羅する
-status: draft
+status: published
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-21
 ---
-
 # Enum を switch 文で網羅する
 
 ## 概要
