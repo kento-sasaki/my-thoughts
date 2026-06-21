@@ -1,10 +1,9 @@
 ---
 title: React.JSX.Element を返す関数を定義しない
-status: draft
+status: published
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-21
 ---
-
 # React.JSX.Element を返す関数を定義しない
 
 ## 概要
