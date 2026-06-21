@@ -1,10 +1,9 @@
 ---
 title: useState で前の値を正しく更新する
-status: draft
+status: published
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-21
 ---
-
 # useState で前の値を正しく更新する
 
 ## 概要

@@ -1,10 +1,9 @@
 ---
 title: 不要な export をしない
-status: draft
+status: published
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-21
 ---
-
 # 不要な export をしない
 
 ## 概要
@@ -76,8 +75,6 @@ const FooContent: FC = () => {
 ## なぜこのルールが必要か
 
 ESLint で未使用の変数などをチェックするルールを設定していても、`export` していると「どこかで使われているかも」とみなされ、実際には不要になっていても検知をすり抜けてしまう。公開範囲を絞ることで、死んだコードを検知できる状態を保つ。
-
-→ なぜ：[制約が設計を導く](../../../Principles/Engineering/03_制約が設計を導く.md)
 
 ## 例外
 

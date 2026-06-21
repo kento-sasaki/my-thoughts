@@ -1,10 +1,9 @@
 ---
 title: Button コンポーネントの中で Text コンポーネントを使わない
-status: draft
+status: published
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-21
 ---
-
 # Button コンポーネントの中で Text コンポーネントを使わない
 
 ## 概要
@@ -16,7 +15,7 @@ updated: 2026-06-19
 ```tsx
 // Text で独自にスタイル調整 → デザインシステムの定義に則さない Button になる
 <Button>
-  <Text textStyle="S1rem_W400_H1.5rem_LS0">Submit</Text>
+  <Text textStyle="Std-16N-175">Submit</Text>
 </Button>
 ```
 
@@ -24,12 +23,12 @@ updated: 2026-06-19
 
 ```tsx
 // Button の API で表現する
-<Button size="2.5rem">Submit</Button>
+<Button size="lg">Submit</Button>
 ```
 
 ## なぜこのルールが必要か
 
-`Button` はデザインシステム（CBT Design Components や Storybook）の定義に従っているべきであり、`Button` の中の文字は `variant` / `colorScheme` / `size` で表現できるように実装されているはずである。`Text` を使って独自に文字のスタイルを変更するのは、定義に則さない `Button` を作ることになる。`Text` を使わないと Figma の通りにならないのであれば、その Figma が誤っているか、`Button` の定義側を修正する必要がある。
+`Button` はデザインシステムの定義に従っているべきであり、`Button` の中の文字は `variant` / `colorScheme` / `size` で表現できるように実装されているはずである。`Text` を使って独自に文字のスタイルを変更するのは、定義に則さない `Button` を作ることになる。`Text` を使わないと Figma の通りにならないのであれば、その Figma が誤っているか、`Button` の定義側を修正する必要がある。
 
 ## 例外
 
