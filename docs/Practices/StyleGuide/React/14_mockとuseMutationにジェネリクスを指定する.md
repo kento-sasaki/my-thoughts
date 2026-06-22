@@ -2,7 +2,7 @@
 title: mockGraphQLQuery と useMutation にジェネリクスを指定する
 status: draft
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 
 # mockGraphQLQuery と useMutation にジェネリクスを指定する
@@ -16,26 +16,26 @@ updated: 2026-06-19
 
 ```tsx
 // mockGraphQLQuery に型を指定していない
-mockGraphQLQuery('FindPatientProfileCheckQuery', standard)
+mockGraphQLQuery('FindUserProfileQuery', standard)
 
 // useMutation に型を指定していない
-const [createPacingPlan] = useMutation(CREATE_PACING_PLAN)
+const [createTodo] = useMutation(CREATE_TODO)
 ```
 
 ## 👍 適切な例
 
 ```tsx
 // mockGraphQLQuery にジェネリクスで型を指定
-mockGraphQLQuery<PatientProfileCheckQuery>(
-  'FindPatientProfileCheckQuery',
+mockGraphQLQuery<UserProfileQuery>(
+  'FindUserProfileQuery',
   standard
 )
 
 // useMutation にジェネリクスで型を指定
-const [createPacingPlan] = useMutation<
-  CreatePacingPlan,
-  CreatePacingPlanVariables
->(CREATE_PACING_PLAN)
+const [createTodo] = useMutation<
+  CreateTodo,
+  CreateTodoVariables
+>(CREATE_TODO)
 ```
 
 ## なぜこのルールが必要か

@@ -2,7 +2,7 @@
 title: useMutation の onCompleted と onError を活用する
 status: draft
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 
 # useMutation の onCompleted と onError を活用する
@@ -16,7 +16,7 @@ updated: 2026-06-19
 ```tsx
 // mutation の成功/失敗にかかわらず後続処理が実行される
 const handleSubmit = async () => {
-  await createPacingPlan({ variables: { input } })
+  await createTodo({ variables: { input } })
   // 通信エラー時もここが実行され、画面が壊れる
   closeModal()
   setSectionIndex((prev) => prev + 1)
@@ -26,10 +26,10 @@ const handleSubmit = async () => {
 ## 👍 適切な例
 
 ```tsx
-const [createPacingPlan] = useMutation<
-  CreatePacingPlan,
-  CreatePacingPlanVariables
->(CREATE_PACING_PLAN, {
+const [createTodo] = useMutation<
+  CreateTodo,
+  CreateTodoVariables
+>(CREATE_TODO, {
   onCompleted: () => {
     closeModal()
   },

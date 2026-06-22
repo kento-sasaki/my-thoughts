@@ -2,7 +2,7 @@
 title: useEffect は関連ロジックをまとめる
 status: draft
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 
 # useEffect は関連ロジックをまとめる
@@ -16,18 +16,18 @@ updated: 2026-06-19
 ```tsx
 // 関連する処理が複数の useEffect に分散
 useEffect(() => {
-  if (!programOpened) {
-    showError('E18')
+  if (!hasAccess) {
+    showError('ACCESS_DENIED')
     navigate(routes.home(), { replace: true })
   }
-}, [programOpened])
+}, [hasAccess])
 
 useEffect(() => {
-  if (!previousSectionCompleted) {
-    showError('E19')
+  if (!previousStepCompleted) {
+    showError('STEP_INCOMPLETE')
     navigate(routes.home(), { replace: true })
   }
-}, [previousSectionCompleted])
+}, [previousStepCompleted])
 ```
 
 ## 👍 適切な例
@@ -35,14 +35,14 @@ useEffect(() => {
 ```tsx
 // 関連する処理を1つの useEffect に。else if で優先順位が明示される
 useEffect(() => {
-  if (!programOpened) {
-    showError('E18')
+  if (!hasAccess) {
+    showError('ACCESS_DENIED')
     navigate(routes.home(), { replace: true })
-  } else if (!previousSectionCompleted) {
-    showError('E19')
+  } else if (!previousStepCompleted) {
+    showError('STEP_INCOMPLETE')
     navigate(routes.home(), { replace: true })
   }
-}, [programOpened, previousSectionCompleted])
+}, [hasAccess, previousStepCompleted])
 ```
 
 ## なぜこのルールが必要か

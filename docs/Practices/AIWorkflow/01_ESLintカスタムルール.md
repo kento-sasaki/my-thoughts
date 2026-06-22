@@ -2,7 +2,7 @@
 title: 規約を ESLint カスタムルールにする
 status: draft
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 
 # 規約を ESLint カスタムルールにする
@@ -62,7 +62,7 @@ module.exports = {
 
 👎
 ```tsx
-<Button><Text textStyle="S1rem_W400_H1.5rem_LS0">送信</Text></Button>
+<Button><Text textStyle="label-md">送信</Text></Button>
 ```
 
 👍
@@ -154,7 +154,7 @@ ruleTester.run('no-text-inside-button', rule, {
   invalid: [
     // Button の直接の子に Text: 弾く
     {
-      code: '<Button><Text textStyle="S1rem_W400_H1.5rem_LS0">送信</Text></Button>',
+      code: '<Button><Text textStyle="label-md">送信</Text></Button>',
       errors: [{ messageId: 'noTextInsideButton' }],
     },
     // ネストした Button の中の Text: 弾く

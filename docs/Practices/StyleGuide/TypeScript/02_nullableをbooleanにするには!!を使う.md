@@ -2,7 +2,7 @@
 title: nullable な値を boolean にする際は !! を使う
 status: draft
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 # nullable な値を boolean にする際は !! を使う
 
@@ -14,8 +14,8 @@ updated: 2026-06-19
 ## 👎 不適切な例
 
 ```ts
-// permitted の型が boolean | null | undefined のまま
-const permitted = currentPatient.patient?.isPermittedForExposure
+// verified の型が boolean | null | undefined のまま
+const verified = currentUser.profile?.isVerified
 
 // 0 が falsy として無効扱いされてしまう
 const hasValue = !!value
@@ -24,8 +24,8 @@ const hasValue = !!value
 ## 👍 適切な例
 
 ```ts
-// permitted の型が boolean になる
-const permitted = !!currentPatient.patient?.isPermittedForExposure
+// verified の型が boolean になる
+const verified = !!currentUser.profile?.isVerified
 
 // 0 や "" を有効な値として扱いたい場合
 const hasValue = value !== undefined && value !== null

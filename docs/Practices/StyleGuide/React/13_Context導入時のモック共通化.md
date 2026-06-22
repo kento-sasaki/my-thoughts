@@ -2,7 +2,7 @@
 title: Context 導入時のモック共通化
 status: draft
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 
 # Context 導入時のモック共通化
@@ -18,21 +18,21 @@ updated: 2026-06-19
 各 Story ファイルに `createContextValue` を個別に定義している。
 
 ```tsx
-// AssistantMessageSection.stories.tsx
-const createContextValue = (): PatientHomeContextValue => ({
-  assistantMessage: 'テストメッセージ',
-  consultations: [],
-  todos: [],
-  records: [],
+// NoticeSection.stories.tsx
+const createContextValue = (): DashboardContextValue => ({
+  notice: 'テストメッセージ',
+  messages: [],
+  tasks: [],
+  histories: [],
   // ... 無関係な Section のモック値も全て定義
 })
 
-// TodoSection.stories.tsx
-const createContextValue = (): PatientHomeContextValue => ({
-  assistantMessage: '',
-  consultations: [],
-  todos: [{ id: '1', title: 'テスト' }],
-  records: [],
+// TaskSection.stories.tsx
+const createContextValue = (): DashboardContextValue => ({
+  notice: '',
+  messages: [],
+  tasks: [{ id: '1', title: 'テスト' }],
+  histories: [],
   // ... ほぼ同じ定義の重複
 })
 ```
@@ -42,43 +42,43 @@ const createContextValue = (): PatientHomeContextValue => ({
 デフォルト値を1箇所に定義し、各 Story ではオーバーライドのみ行う。
 
 ```tsx
-// hooks/__mocks__/patientHomeContext.ts
-export const defaultContextValue: PatientHomeContextValue = {
-  assistantMessage: '',
-  consultations: [],
-  todos: [],
-  records: [],
+// hooks/__mocks__/dashboardContext.ts
+export const defaultContextValue: DashboardContextValue = {
+  notice: '',
+  messages: [],
+  tasks: [],
+  histories: [],
   // ... 全フィールドのデフォルト値を1箇所で定義
 }
 
-// AssistantMessageSection.stories.tsx
-import { defaultContextValue } from '../hooks/__mocks__/patientHomeContext'
+// NoticeSection.stories.tsx
+import { defaultContextValue } from '../hooks/__mocks__/dashboardContext'
 
 const meta: Meta = {
   decorators: [
     (Story) => (
-      <PatientHomeProvider value={{
+      <DashboardProvider value={{
         ...defaultContextValue,
-        assistantMessage: 'テストメッセージ',  // この Story に必要な値だけオーバーライド
+        notice: 'テストメッセージ',  // この Story に必要な値だけオーバーライド
       }}>
         <Story />
-      </PatientHomeProvider>
+      </DashboardProvider>
     ),
   ],
 }
 
-// TodoSection.stories.tsx
-import { defaultContextValue } from '../hooks/__mocks__/patientHomeContext'
+// TaskSection.stories.tsx
+import { defaultContextValue } from '../hooks/__mocks__/dashboardContext'
 
 const meta: Meta = {
   decorators: [
     (Story) => (
-      <PatientHomeProvider value={{
+      <DashboardProvider value={{
         ...defaultContextValue,
-        todos: [{ id: '1', title: 'テスト' }],  // この Story に必要な値だけオーバーライド
+        tasks: [{ id: '1', title: 'テスト' }],  // この Story に必要な値だけオーバーライド
       }}>
         <Story />
-      </PatientHomeProvider>
+      </DashboardProvider>
     ),
   ],
 }
@@ -86,7 +86,7 @@ const meta: Meta = {
 
 ## なぜこのルールが必要か
 
-Context の型が変わるたびに、全ての Story の `createContextValue` を更新する必要がなくなる。各 Story では「本当にテストしたい値」だけが明示されるため、Signal-to-Noise 比が向上する。`AssistantMessageSection` の Story を書くために `TodoSection` のモック値を考える必要がなくなり、Story の関心がそのコンポーネントに集中する。
+Context の型が変わるたびに、全ての Story の `createContextValue` を更新する必要がなくなる。各 Story では「本当にテストしたい値」だけが明示されるため、Signal-to-Noise 比が向上する。`NoticeSection` の Story を書くために `TaskSection` のモック値を考える必要がなくなり、Story の関心がそのコンポーネントに集中する。
 
 ## 例外
 
